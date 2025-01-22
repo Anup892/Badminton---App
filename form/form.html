@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="/Matches/matches.html">
+        <label for="title">Title:</label>
+        <input type="text" id="tour-name" placeholder="Name your tournament" required>
+        <select name="type" id="type">
+            <option value="individual">Individual</option>
+            <option value="team">Team</option>
+        </select>
+        <select name="matches" id="matches">
+            <option value="league">League</option>
+            <option value="knockout">Knockout</option>
+        </select>
+        <div class="players">
+            <input type="text" placeholder="Player 1" required>
+            <input type="text" placeholder="Player 2" required>
+            <input type="text" placeholder="Player 3" required>
+            <input type="text" placeholder="Player 4" required>
+        </div>
+        <div class="btns">
+            <button id="more" type="button">+</button><div class="lock"><img src="/images/unlock.png" alt="" id="locked"></div><button id="less" type="button">-</button>
+           
+        </div>
+        <label for="schedule">Schedule:</label>
+        <select name="Schedule" id="schedule">
+            <option value="random">Random</option>
+            <option value="manual">Manual</option>
+        </select>
+        <button type="submit" id="submit">Generate Tournament</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
